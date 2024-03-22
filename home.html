@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dapitan City</title>
+    <link rel="icon" type="image/x-icon" href="dapitancitylogo.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            
+        }
+
+        header {
+            background-image: url("11.png");
+           min-height: 80px;
+            overflow: hidden;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav {
+    background-color: #2196F3;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #0474adef;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    nav a {
+        display: block;
+        padding: 10px 0;
+    }
+}
+        
+         
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #2196F3;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .column {
+    width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .column {
+    width: 50%;
+  }
+}
+
+    
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+        h1 {
+            text-align: center;
+        }
+
+        h2{
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-size: larger;
+            
+            
+        }
+        img {
+            vertical-align: middle;
+        }
+
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+        
+
+    
+        
+        
+    </style>
+</head>
+<body>
+    <header> 
+        
+       <h1><img src="dapitancitylogo.png" alt="Dapitan Logo" height="80" >
+         <a href="index.html">Welcome to Dapitan City</a> </h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="ABOUT1.html">About</a>
+        <a href="Touristspots.html">Tourist spots</a>
+        <a href="Hotel.html">Hotel</a>
+        <a href="con.html">Contact us</a>
+    </nav>
+    
+
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="h1.jpg" style="width: 100%; height: auto;">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="h2.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="h3.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="h4.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="h5.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="h6.jpg" style="width:100%">
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="h1.jpg" style="max-width:100%"   onclick="currentSlide(1)" alt="Balay Hamoy">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="h2.jpg" style="width:100%"   onclick="currentSlide(2)" alt="Aliguay Island">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="h3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Alexandra by the Sea">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="h4.png" style="width:100%" onclick="currentSlide(4)" alt="Selinog Island">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="h5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Ilihan Hills">
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="h6.jpg" style="width:100%" onclick="currentSlide(6)" alt="St. James the Greater Church">
+            </div>
+          </div>
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+
+     
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Dapitan City. All rights reserved.</p>
+    </div>
+</body>
+</html>
